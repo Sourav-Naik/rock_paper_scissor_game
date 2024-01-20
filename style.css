@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: border-box;
+    text-align: center;
+}
+
+body{
+    min-width: fit-content;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;  
+    flex-wrap: nowrap;  
+}
+
+header{
+    min-height: 48px;
+    line-height: 40px;
+    min-width: 434px;
+    background-color:#9046CF;
+    color: #FFF3F0;
+    font-size: 2.5em;
+    font-weight: 700;
+    font-family:cursive;
+    padding: 10px;
+}
+
+footer{
+    min-height: 16px;
+    background-color:#9046CF;
+    color: #FFF3F0;
+    font-size: 16px;
+    padding: 10px;
+}
+
+main{
+    width: 100%;
+    min-width: fit-content;
+    min-height: fit-content;
+    background-color: #F487B6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-shrink: 1;
+    flex-grow: 1;
+    
+}
+
+#holder{
+    display: flex;
+    justify-content: space-evenly;
+    flex-shrink: 1;
+    margin-top: 50px;
+
+}
+
+.option{
+    width: 150px;
+    height: 150px;
+    flex-shrink: 1;
+    border-radius: 50%;
+    border: none;
+    margin:0px 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px solid #F487B6;
+}
+.option:hover{
+    opacity: 60%;
+    border: 5px solid black;
+}
+.option:active{
+    border: 5px solid black;
+    opacity: 100%;
+}
+
+    #rock {
+        background-image:url('/images/rock1.jpg') ;
+        
+    }
+    #rock:active{
+        background-image:url('/images/rock3.jpg') ;    
+    }
+   
+    #paper {
+        background-image:url('/images/hand1.jpg') ;
+    }
+    #paper:active{
+        background-image:url('/images/hand2.jpg') ;
+    }
+     
+    #scissor {
+        background-image:url('/images/scissor1.jpg') ;
+    }
+    #scissor:active{
+        background-image:url('/images/scissor2.jpg') ;
+    }
+
+
+
+
+#count{
+    height: 100px;
+    width: 250px;
+    min-width: 250px;
+    min-height: 100px;
+    background-color: #F487B6;
+    display: flex;
+    flex-shrink: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+    #player{
+        width: 50%;
+    }
+    #comp{
+        width: 50%;
+    }
+    h1{
+        font-size: 70px;
+    }
+
+    
+#result{
+    padding: 15px;
+    background: #9046cf;
+    color: white;
+    border-radius: 10px;
+    font-size: 30px;
+    flex-shrink: 1;
+    margin-bottom: 10px; 
+}
